@@ -21,6 +21,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -45,7 +46,10 @@ ActionBar.OnNavigationListener {
 	  int idCourse;
 	  
 	  String setCourse = "не пришло :(";
-	  	  
+
+		CheckBox cbMed;
+		ListView lvPharmacy;
+		SimpleCursorAdapter scPharmacy;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -148,6 +152,45 @@ ActionBar.OnNavigationListener {
     }
     
     
+    	// добавление лекарств в курс
+    	public void addMed() {
+    		
+    		// открываем фрагмент
+    		
+    		
+//	        // открываем подключение к БД
+//	        db = new DB(this);
+//	        db.open();	        
+//	        
+//	        // получаем курсор
+//	        cursor = db.getAllMed();
+//	        startManagingCursor(cursor);
+//	        
+//			// находим наш чекбокс
+//			cbMed = (CheckBox)findViewById(R.id.checkBoxMed);
+//			
+//	        // формируем столбцы сопоставления
+//	        String[] from = new String[] {DB.COLUMN_NAME_MED};
+//	        int[] to = new int[] {R.id.checkBoxMed};
+//	        // создааем адаптер и настраиваем список
+//	        scPharmacy = new SimpleCursorAdapter(this, R.layout.item_med, cursor, from, to);
+//	        lvPharmacy = (ListView) findViewById(R.id.medToCourse);
+//	        lvPharmacy.setAdapter(scPharmacy);
+//	        // даем название чекбоксу по названию лекарства
+//			cbMed.setText(DB.COLUMN_NAME_MED);
+//			  		
+//			// если он нажат
+//			if (cbMed.isChecked()) {
+//			
+//				// если не нажат
+//			} else {
+//			
+//			    			
+//			}
+    		
+
+    	}
+    
     public void mySpiner() {
     	
     	//тут метод с DB.java который поставит курсор куда надо )
@@ -242,7 +285,7 @@ ActionBar.OnNavigationListener {
           
         case R.id.add_med:
             Toast.makeText(this, "Выбор лекарств", Toast.LENGTH_SHORT).show();
-            add_med();
+            addMed();
             break;
           
         case R.id.refresh:
@@ -253,10 +296,6 @@ ActionBar.OnNavigationListener {
       return(super.onOptionsItemSelected(item));
     }
     
-    private void add_med() {
-		// TODO Auto-generated method stub
-		
-	}
 
 	//Диалог добавления курса
     protected Dialog onCreateDialog(int id) {
