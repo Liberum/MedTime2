@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/pharmacyL"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClickMed"
+        android:text="@string/addMed" />
+
+	<TableLayout
+			    android:id="@+id/tableMed2"
+			    android:stretchColumns="0"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" >
+	           
+	    <TableRow >
+		    
+		    <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:text="@string/name"
+			        android:textSize="14sp" />
+
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:gravity="right"
+		        android:text="@string/num"
+		        android:paddingRight="20dip"
+		        android:textSize="14sp" />
+
+	    </TableRow>
+	</TableLayout>
+
+<ListView
+ android:id="@+id/lvPharmacy"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content">
+</ListView>
+</LinearLayout>

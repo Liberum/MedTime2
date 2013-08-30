@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/ivImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" >
+    </ImageView>
+    
+    <TableLayout 
+		android:layout_height="fill_parent" 
+		android:layout_width="match_parent" 
+		android:id="@+id/tableLayout1"> 
+		
+       <TableRow 
+			android:id="@+id/tableRow1"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+    
+	        <TextView
+		        android:id="@+id/tvText"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:textStyle="italic"
+		        android:textColor="#ff0000"
+		        android:layout_marginLeft="20dp"
+		        android:text="tvText"
+		        android:textSize="14sp" />        
+        </TableRow>
+		        	        
+		<TableRow 
+			android:id="@+id/tableRow2" 
+			android:layout_gravity="bottom"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+        	
+		    <TextView
+		        android:id="@+id/tvNum"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginLeft="10dp"
+		        android:text="tvNum"
+		        android:textSize="18sp" />
+	    </TableRow>
+	    
+	 </TableLayout>
+
+</LinearLayout>

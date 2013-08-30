@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="vertical">
+
+    <!-- Первая таблица -->
+	<TableLayout
+	    android:id="@+id/tableMed"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    	       	 
+	 	 <TableRow>			
+			 <EditText
+				    android:id="@+id/new_med"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				   	android:hint="@string/med_data" />			 	        			    
+	 	   </TableRow>
+	    
+	</TableLayout>
+	
+	<!-- Вторая таблица -->
+	
+	<TableLayout
+			    android:id="@+id/tableMed2"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" >
+	           
+	    <TableRow >
+		    
+		    <TextView
+			        android:id="@+id/Num"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:text="@string/num"
+			        android:textSize="18sp" />
+
+	<!--		    <TextView
+		        android:id="@+id/Num1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:text="@string/price"
+		        android:textSize="18sp" /> -->
+	        
+	    </TableRow>
+	    
+	    
+	  	<TableRow >
+		    
+	  	    <EditText
+		        android:id="@+id/numMed"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:hint="0"
+		        android:inputType="number"
+		        android:maxLength="5"
+		        android:textSize="18sp" />
+	  	    		    
+	  <!--	    <EditText
+		        android:id="@+id/NumMed4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:hint="0.00"
+		        android:inputType="numberDecimal"
+		        android:maxLength="8"
+		        android:textSize="18sp" /> -->
+	        
+	    </TableRow>
+	           
+	</TableLayout>
+ 
+</LinearLayout>

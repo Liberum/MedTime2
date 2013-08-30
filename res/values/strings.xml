@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MedTime</string>
+    <string name="action_settings">Меню</string>
+    <string name="pharmacy">Аптека</string>
+    <string name="add_med">Добавить лекарства</string>
+    <string name="all_back">На главную</string>
+
+    <string name="addCourse">Добавить курс</string>
+	<string name="addMed">Добавить лекарство</string>
+	
+	<string name="delCourse">Удалить курс</string>
+	<string name="delMed">Удалить лекарство</string>
+	
+	<string name="med_data">Введите название лекарства:</string>
+	<string name="course_data">Введите название курса:</string>
+	
+	<string name="name">Название: </string>
+	<string name="num">К-во: </string>
+	<string name="price">Цена: </string>
+	
+	<string name="refresh">Обновить</string>
+		
+	<string name="yes">Да</string>
+	<string name="no">Нет</string>
+	<string name="cancel">Отмена</string>
+	<string name="saved">Сохранено</string>
+
+</resources>

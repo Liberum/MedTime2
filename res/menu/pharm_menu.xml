@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_settings">
+        
+    <menu>
+        
+      <item android:id="@+id/all_back"
+      android:title="@string/all_back" />  
+      
+      <item android:id="@+id/pharmacy"
+      android:title="@string/pharmacy" />
+      
+      <item android:id="@+id/refresh"
+      android:title="@string/refresh" />    
+      
+    </menu>
+    
+    </item>
+    
+</menu>
